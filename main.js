@@ -1,44 +1,46 @@
 /* 
 👉 Write your kata here!
 Carrie is an artist who's very spontaneous. 
-She always starts/ works on/ stops different projects from day to day.
-Or, she comes up with new ideas but doesn't actually do it.
-
+She always starts new projects and puts them on hold when she gets bored.
 Unfortunately, you are her assistant.
-Make a function that updates her progress list as days pass by.
-Keep track of only the projects that are still in progress.
-The number represents the percentage of the project that is in progress.
+
+Write a function that takes in her project list and her daily progress,
+returning the list with updated progress.
+
+Delete the ones that reached 100%. 
+
 */
 
 
-// the initial progress list
-const carriesProgress = {
-    "filmShortStoryLong" : 99,
-    "filmScotland": 1,
-    "newBook": 5,
-    "newAlbum": 20
+// The initial project list
+const projectList = {
+    "artFilm" : 90,
+    "artPerformance": 10,
+    "painting": 5,
 }
 
-// example day
-const day1 = {
-    "filmShortStoryLong" : 99,
-    "newBook": 10, 
-    "newAlbum": 0, 
-    "danceClass": 0, 
-    "newApp": 0
+// New progress on day 1
+const dailyProgress = {
+    "artFilm" : +10,
+    "artPerformance": +10,
+    "painting": +30,
+    "photoJournal": +5,
 }
 
-//Answer
-const expectedDay1 = {
-    "filmShortStoryLong" : 99,
-    "filmScotland": 1,
-    "newBook": 10
+// The updated project list
+const updatedProjectlist= {
+    "artPerformance": 20,
+    "painting": 35,
+    "photoJournal": 5,
 }
 
 //👉 Write the function your CodeWarriors will start with below here:
 
-export function updateProgress(day) {
+export function updateProgress(projectList, dailyProgress) {
+    let updatedProjectlist = {};
     // your code here
     
+
+    return updatedProjectlist;
 }
 
